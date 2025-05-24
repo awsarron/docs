@@ -1,7 +1,27 @@
+:root > * {
+    --md-primary-fg-color: #14181C;
+    --md-primary-bg-color: #F0F6FC;
+    --md-primary-bg-color--light: #716F6F;
+    --md-accent-fg-color: #5E8BDE;
+    --md-typeset-a-color: #5E8BDE;
+}
+
+[data-md-color-scheme="default"] {
+    .md-header, .md-tabs {
+        background-color: #FFF;
+        color: var(--md-primary-fg-color);
+    }
+    .md-search__form, .md-search__input, .md-search__icon {
+        background-color: #F0F0F0;
+        color: var(--md-primary-fg-color);
+    }
+}
+
 .md-header__button.md-logo {
     padding: 0 .4rem;
 }
-.md-header__button.md-logo img, .md-header__button.md-logo svg {
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
     height: 2rem;
     width: 2rem;
 }
@@ -12,9 +32,13 @@
 }
 
 .md-tabs__item--active,
-.md-tabs__item:hover {
+.md-tabs__item:hover,
+.md-content a:hover {
     text-decoration: underline;
     text-underline-offset: .5em;
+}
+.md-content a:hover {
+    text-underline-offset: .2em;
 }
 
 .md-nav--lifted > .md-nav__list > .md-nav__item > [for],

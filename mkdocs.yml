@@ -11,16 +11,14 @@ theme:
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      primary: blue grey
-      accent: orange
+      primary: custom
       scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: blue grey
-      accent: orange
+      primary: custom
       scheme: slate
       toggle:
         icon: material/brightness-4
